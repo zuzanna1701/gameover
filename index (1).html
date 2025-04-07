@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAME OVER - Zakład Pogrzebowy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      animation: blink 2s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    header p {
+      font-style: italic;
+      margin-top: 10px;
+      color: #bbb;
+    }
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #444;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: "\2713";
+      color: #cc0000;
+      margin-right: 10px;
+    }
+    footer {
+      background-color: #222;
+      color: #eee;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+    .logo {
+      max-width: 150px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    .call-button {
+      background-color:#cc0000;
+      color:white;
+      padding:10px 20px;
+      text-decoration:none;
+      border-radius:5px;
+      display:inline-block;
+      margin-top:10px;
+    }
+    .opinie {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .opinie p {
+      font-size: 1.1em;
+      color: #444;
+      margin: 10px 0;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    form label {
+      display: block;
+      margin-top: 10px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      margin-top: 15px;
+      background-color: #cc0000;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo_gameover.png" alt="Logo Game Over" class="logo">
+  <h1>GAME OVER</h1>
+  <p>"Takich pięciu, jak nas dwie nie znajdziecie"</p>
+</header>
+
+<section>
+  <h2>O nas</h2>
+  <p>Krematorium Game Over powstało z myślą o zapewnieniu godnego i spokojnego pożegnania z najbliższymi. Od początku naszej działalności towarzyszymy rodzinom w najtrudniejszych chwilach, oferując pełen profesjonalizm, dyskrecję i szacunek dla zmarłych oraz ich bliskich.</p>
+  <p>Nasze krematorium wyposażone jest w nowoczesne technologie, które spełniają najwyższe standardy ekologiczne i etyczne. Dbamy o każdy detal procesu kremacji, zapewniając transparentność i zgodność z obowiązującymi przepisami.</p>
+  <p>Oferujemy kompleksową obsługę – od organizacji ceremonii po przekazanie urny – z możliwością indywidualnego dostosowania usług do potrzeb rodziny. Nasz doświadczony personel sluży pomocą i wsparciem na każdym etapie.</p>
+  <p>W Game Over wierzymy, że każde pożegnanie zasługuje na spokój, godność i pamięć.</p>
+</section>
+
+<section>
+  <h2>Usługi</h2>
+  <ul>
+    <li>Kremacja</li>
+    <li>Transport</li>
+    <li>Pomoc w formalnościach urzędowych oraz cmentarnych</li>
+    <li>Oprawa florystyczna i muzyczna</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Cennik</h2>
+  <h3>1. Kremacja</h3>
+  <p>Koszt samej kremacji wynosi od 300 do 1000 zł, w zależności od miasta. Przykładowo, we Wrocławiu ceny wahają się między 300 a 600 zł.</p>
+
+  <h3>2. Trumna kremacyjna</h3>
+  <p>Do kremacji wymagana jest specjalna trumna, zazwyczaj wykonana z drewna sosnowego lub materiałów łatwopalnych, bez metalowych elementów. Ceny trumien kremacyjnych kształtują się następująco:</p>
+  <ul>
+    <li>Trumna kartonowa: około 150–300 zł.</li>
+    <li>Trumna drewniana: od 400 do 700 zł.</li>
+  </ul>
+
+  <h3>3. Urna</h3>
+  <p>Po kremacji prochy umieszczane są w urnie, której koszt zależy od materiału i wzornictwa:</p>
+  <ul>
+    <li>Najtańsze urny: od 150–250 zł.</li>
+    <li>Bardziej ozdobne modele: mogą kosztować nawet do 2000 zł.</li>
+  </ul>
+</section>
+
+<section class="opinie">
+  <h2>Opinie</h2>
+  <p><em>"To była ostatnia podróż, ale dzięki Game Over – z klasą!"</em> – Stefan, 89 lat (przez rodzinę)</p>
+  <p><em>"Obsługa nie do końca z tego świata. Polecam!"</em> – Janina z Ząbkowic</p>
+</section>
+
+<section>
+  <h2>Kontakt</h2>
+  <p><strong>Telefon:</strong> 666 999 666</p>
+  <p><strong>E-mail:</strong> <a href="mailto:gg@gameover.pl">gg@gameover.pl</a></p>
+  <p><a href="tel:666999666" class="call-button">📞 Zadzwoń teraz</a></p>
+</section>
+
+<section>
+  <h2>Formularz kontaktowy</h2>
+  <form action="#" method="post">
+    <label for="name">Imię i nazwisko:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Adres e-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Wiadomość:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Wyślij wiadomość</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Game Over - Wszystkie prawa zarezerwowane
+</footer>
+
+</body>
+</html>
